@@ -1,0 +1,23 @@
+{
+  "name": "hw-burger",
+  "version": "1.0.0",
+  "description": "burger homework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanLongo19/HW-Burger.git"
+  },
+  "author": "Dan Longo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanLongo19/HW-Burger/issues"
+  },
+  "homepage": "https://github.com/DanLongo19/HW-Burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.17.1"
+  }
+}
