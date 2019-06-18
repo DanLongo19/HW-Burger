@@ -1,4 +1,6 @@
-var orm = require("./config/orm.js");
+var orm = require("../orm.js");
+var express = require("express");
+var router = express.Router();
 
 var burger = {
     all: function(cb){
