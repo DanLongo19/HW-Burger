@@ -1,9 +1,8 @@
 # HW-Burger
 
-I cannot get my app to work so I haven't been able to properly style it with CSS. I believe it is an issue with connecting to MySQL (or JawsDB in Heroku). Below is my error...
+I cannot get my app to work so I haven't been able to properly style it with CSS. I believe it is an issue with connecting to MySQL (or JawsDB in Heroku). I reworked some of my connection.query functions, but now am getting the below...
 
-TypeError: connection.query is not a function
-    at Object.all (/Users/dan_longo/Desktop/Bootcamp/HW-Burger/config/controllers/orm.js:6:16)
+TypeError: orm.all is not a function
     at Object.all (/Users/dan_longo/Desktop/Bootcamp/HW-Burger/config/controllers/models/burger.js:7:9)
     at /Users/dan_longo/Desktop/Bootcamp/HW-Burger/config/controllers/burger_controller.js:9:12
     at Layer.handle [as handle_request] (/Users/dan_longo/Desktop/Bootcamp/HW-Burger/node_modules/express/lib/router/layer.js:95:5)
@@ -13,6 +12,7 @@ TypeError: connection.query is not a function
     at /Users/dan_longo/Desktop/Bootcamp/HW-Burger/node_modules/express/lib/router/index.js:281:22
     at Function.process_params (/Users/dan_longo/Desktop/Bootcamp/HW-Burger/node_modules/express/lib/router/index.js:335:12)
     at next (/Users/dan_longo/Desktop/Bootcamp/HW-Burger/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/dan_longo/Desktop/Bootcamp/HW-Burger/node_modules/express/lib/router/index.js:174:3)
     
 I talked with Scott about this before class on Monday and he mentioned that in his past he has seen a lot of people have trouble connecting using the JawsDB so I believe this is leading to my error.
 
