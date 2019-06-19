@@ -11,7 +11,7 @@ var orm = {
   update: function(tableInput, condition, cb) {
     var queryString = "UPDATE " + table;
     queryString += "SET";
-    queryString += deveoured=true;
+    queryString += devoured=true;
     queryString += condition;
     console.log(queryString);
     connection.query(queryString , function(err, result) {
@@ -22,13 +22,13 @@ var orm = {
   add: function(tableInput, value, cb) {
     var queryString = "INSERT INTO" + table;
     queryString += " (";
-    queryString += cols.toString();
+    queryString += cols.tableInput();
     queryString += ") ";
     queryString += "VALUES (";
-    queryString += printQuestionMarks(vals.length);
+    queryString += tableInput(value.length);
     queryString += ") ";
     console.log(queryString);
-    connection.query(queryString, vals, function(err, result) {
+    connection.query(queryString, value, function(err, result) {
       if (err) throw err;
       console.log(result);
     });
