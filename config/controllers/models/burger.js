@@ -1,18 +1,20 @@
-var orm = require("../orm.js");
+var orm = require("./../orm.js");
 var express = require("express");
 var router = express.Router();
 
 var burger = {
-    all: function(cb){
+    all: function(cb) {
     orm.all("burgers", function(res){
         cb(res);
-    })
+    });
     },
-    update: function(id, cb){
-        orm.update('burgers', id, cb);
+    update: function(objColVals, condition, cb){
+        orm.update('burgers', objColVals, condition, cb);
 },
-    add: function(name, cb){
-        orm.add('burgers', name, cb);
+    add: function(cols, vals, cb){
+        orm.add('burgers', cols, vals, function(res){
+            cb(res);
+        });
 }
 }
 router.post('/burgers/create', function(req,res){
