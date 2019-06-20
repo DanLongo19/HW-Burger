@@ -1,7 +1,6 @@
 var mysql = require('mysql');
 var connection;
 
- 
         connection = mysql.createConnection({
             host: 'us-cdbr-iron-east-02.cleardb.net',
             user: 'bea42a05407b85',
