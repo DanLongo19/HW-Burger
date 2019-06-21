@@ -1,4 +1,4 @@
-var connection = require("../controllers/connection.js");
+var connection = require("./connection.js.js");
 
 // Helper function for SQL syntax.
 // Let's say we want to pass 3 values into the mySQL query.
