@@ -1,4 +1,4 @@
-var orm = require("../controllers/orm.js.js");
+var orm = require("../config/orm.js");
 var express = require("express");
 var router = express.Router();
 
