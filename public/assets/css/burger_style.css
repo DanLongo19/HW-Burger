@@ -1,3 +1,14 @@
 background-color{
     color: lightsalmon;
 }
+.btn-primary, {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn btn-default {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
