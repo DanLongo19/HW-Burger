@@ -13,7 +13,7 @@ router.get("/", function(req, res) {
       });
     });
     
-    // post route -> back to index
+    // post route 
     router.post("/burgers/create", function(req, res) {
       burger.create(req.body.burger_name, function(result) {
         console.log(result);
@@ -21,7 +21,7 @@ router.get("/", function(req, res) {
       });
     });
     
-    // put route -> back to index
+    // put route 
     router.put("/burgers/:id", function(req, res) {
       burger.update(req.params.id, function(result) {
         console.log(result);

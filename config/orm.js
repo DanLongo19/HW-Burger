@@ -15,7 +15,6 @@ function printQuestionMarks(num) {
   return arr.toString();
 }
 function objToSql(ob) {
-  // column1=value, column2=value2,...
   var arr = [];
 // loop through the keys and push the key/value as a string int arr
   for (var key in ob) {
@@ -57,7 +56,6 @@ function objToSql(ob) {
       });
     },
     // objColVals would be the columns and values that you want to update
-    // an example of objColVals would be {name: panther, sleepy: true}
     update: function(table, objColVals, condition, cb) {
       var queryString = "UPDATE " + table;
   
